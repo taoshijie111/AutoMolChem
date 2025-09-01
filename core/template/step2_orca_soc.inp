@@ -1,0 +1,15 @@
+%pal  
+nprocs 4  
+end  
+
+%maxcore 4000  
+# ORCA TDDFT calculation for S1-T1 gap analysis (calculates both singlets and triplets)  
+! B3LYP def2-SVP RIJCOSX TightSCF  
+%tddft  
+nroots 5  
+tda False
+triplets true  
+dosoc true 
+end  
+
+* xyzfile {charge} {multiplicity} {xyz_file}  
