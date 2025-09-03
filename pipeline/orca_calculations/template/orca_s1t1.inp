@@ -1,0 +1,13 @@
+%pal  
+nprocs 4  
+end  
+
+! B3LYP def2-SVP RIJCOSX TightSCF  
+%maxcore 4000  
+
+%tddft  
+nroots 5  
+triplets true  
+end  
+
+* xyzfile {charge} {multiplicity} {xyz_file}  
